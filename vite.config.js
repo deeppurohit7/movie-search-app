@@ -1,7 +1,8 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/movie-search-app/', // Tells Vite your app is hosted under this sub-path
 })
